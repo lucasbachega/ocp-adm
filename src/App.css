@@ -3,6 +3,7 @@
   height: 100vh;
   background-color: #FAFAFA;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -33,5 +34,11 @@
   overflow: auto;
   padding-left: 50px;
   padding-right: 50px;
+  position: relative;
   padding-top: 5px;
+}
+.fab {
+  position: absolute;
+  right: 90px;
+  bottom: 50px;
 }
