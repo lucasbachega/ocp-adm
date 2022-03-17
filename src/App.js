@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className='header'>
-        <img src={Logo} className='logo' width={200} />
+        <img src={Logo} className='logo' width={150} />
         <p className='title'>PAINEL DO ADMINISTRADOR - OCP</p>
       </header>
       <div className='content'>

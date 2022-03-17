@@ -116,7 +116,7 @@ const EnhancedTableToolbar = (props) => {
 
     return (
         <Toolbar
-            style={{ borderTopLeftRadius: 20, borderTopRightRadius: 20, padding: '10px 40px 0px 40px', }}
+            style={{ padding: '10px 40px 0px 40px', }}
         >
             {numSelected > 0 ? (
                 <Typography
@@ -187,8 +187,8 @@ export default function EnhancedTable() {
     const isSelected = (name) => selected.indexOf(name) !== -1;
 
     return (
-        <Box sx={{ width: '100%', height: '100%', borderTopLeftRadius: 20, borderTopRightRadius: 20, boxShadow: '0px 0px 3px lightgray' }}>
-            <Paper sx={{ width: '100%', height: '100%', borderTopLeftRadius: 20, borderTopRightRadius: 20 }}>
+        <Box sx={{ width: '100%', height: '100%'}}>
+            <Paper sx={{ width: '100%', height: '100%' }}>
                 <EnhancedTableToolbar numSelected={selected.length} />
                 <TableContainer style={{ height: '900px', overflow: 'auto' }}>
                     <Table
