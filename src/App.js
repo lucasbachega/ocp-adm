@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from '../src/assets/soufer-logo.png'
+import Table from './components/Table';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className='header'>
+        <img src={Logo} className='logo' width={200} />
+        <p className='title'>PAINEL DO ADMINISTRADOR - OCP</p>
       </header>
+      <div className='content'>
+          <Table />
+      </div>
     </div>
   );
 }
