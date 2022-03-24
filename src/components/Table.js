@@ -185,7 +185,7 @@ export default function EnhancedTable({ users, loading }) {
                                 onSelectAllClick={handleSelectAllClick}
                                 rowCount={users.length}
                             />
-                            {users.length === 0 && (
+                            {users.length > 0 && (
                                 <TableBody style={{ width: '100%' }}>
                                     {users.map((row, index) => {
                                         const isItemSelected = isSelected(row.user);
