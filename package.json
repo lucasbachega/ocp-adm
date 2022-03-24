@@ -18,6 +18,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "start:server": "pm2 --name ocp-adm --watch serve build --spa",
     "start:prod": "serve -s build",
     "start": "react-scripts start",
     "build": "react-scripts build",
